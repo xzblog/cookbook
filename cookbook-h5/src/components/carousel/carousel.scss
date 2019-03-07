@@ -1,0 +1,50 @@
+.yg-carousel{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    &-wrap {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        transition-property: transform;
+
+        > .slide {
+            display: flex;
+            flex: none;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+
+            &>img {
+                display: block;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .slider-dots{
+        z-index: 99;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0.1rem;
+
+        > span{
+            display: inline-block;
+            width: 0.12rem;
+            height: 0.12rem;
+            border: 1px solid #ccc;
+            margin: 0 6px;
+            cursor: pointer;
+            border-radius: 50%;
+            &.dot-active{
+                background: #ccc;
+            }
+        }
+    }
+}

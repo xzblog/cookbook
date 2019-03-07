@@ -1,0 +1,22 @@
+.yg-pull-load{
+    position: relative;
+    .tips{
+        width: 100%;
+        display: none;
+        line-height: 0.4rem;
+        height: 0.4rem;
+        font-size: 0.15rem;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &.show{
+            display: block;
+        }
+    }
+    .content{
+        background-color: #fff;
+        //transition: transform 0.3s;
+
+    }
+}

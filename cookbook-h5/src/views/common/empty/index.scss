@@ -1,0 +1,14 @@
+.empty{
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	color: #999;
+	font-size: 0.16rem;
+	.empty-icon{
+		color: #666;
+		margin-bottom: 0.1rem;
+	}
+}

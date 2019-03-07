@@ -1,0 +1,47 @@
+.classify{
+	.yg-navbar{
+		border-bottom: 1px solid #eee;
+	}
+	.cont{
+		//position: fixed;
+		//top: 0.5rem;
+		//bottom: 0.5rem;
+		//height: calc(100% - 0.5rem);
+		height: 4rem;
+		.tabs{
+			display: flex;
+			justify-content: space-between;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			.tabs-nav{
+				flex-shrink: 0;
+				width: 18%;
+				.tabs-nav-item{
+					height: 0.45rem;
+					line-height: 0.45rem;
+					text-align: center;
+					&.active{
+						background-color: #fff;
+						border-left: 2px solid #F56C6C;
+					}
+				}
+			}
+			.tabs-cont{
+				width: 82%;
+				background-color: #fff;
+				.tabs-plan{
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					.item{
+						width: 33.33%;
+						text-align: center;
+						color: #888;
+						line-height: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}

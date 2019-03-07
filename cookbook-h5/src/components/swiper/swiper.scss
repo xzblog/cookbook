@@ -1,0 +1,17 @@
+$class-prefix: 'yg-swiper';
+
+.#{$class-prefix}{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &-wrapper{
+        display: flex;
+        position: relative;
+
+        .#{$class-prefix}-slide{
+
+        }
+    }
+
+}

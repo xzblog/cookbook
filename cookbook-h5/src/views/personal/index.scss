@@ -1,0 +1,125 @@
+.person{
+	padding-bottom: 0.5rem;
+	.person-top{
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.2rem 0.2rem 0.3rem;
+		margin-bottom: 1px;
+		.top-left{
+			width: 70%;
+			h2{
+				font-weight: 400;
+				font-size: 0.2rem;
+			}
+			.desc{
+				font-size: 0.14rem;
+				color: #999;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				margin-top: 0.1rem;
+				margin-bottom: 0.1rem;
+			}
+			.redact{
+				height: 0.28rem;
+				line-height: 0.28rem;
+				width: 0.6rem;
+				text-align: center;
+				display: inline-block;
+				background-color: #eff3f6;
+				border-radius: 3px;
+				color: #555;
+				border: none;
+			}
+		}
+		.avatar{
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			span{
+				box-shadow: 0 0 5px #eee;
+				display: block;
+				width: 0.8rem;
+				height: 0.8rem;
+				text-align: center;
+				line-height: 0.8rem;
+				border-radius: 50%;
+				img{
+					width: 100%;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	.order-management{
+		background-color: #fff;
+		margin-bottom: 0.1rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.1rem 0;
+		.item{
+			width: 20%;
+			text-align: center;
+			i{
+				display: inline-block;
+				width: 0.22rem;
+				height: 0.22rem;
+			}
+			p{
+				font-size: 0.12rem;
+				color: #555;
+				margin-top: 0.05rem;
+			}
+		}
+	}
+	.person-list{
+		.item{
+			background-color: #fff;
+			display: flex;
+			align-items: center;
+			padding: 0.2rem;
+			position: relative;
+			.icon{
+				width: 0.26rem;
+				height: 0.26rem;
+				background-color: #ccc;
+				border-radius: 3px;
+			}
+			.title{
+				font-size: 0.16rem;
+				color: #333;
+				margin-left: 0.1rem;
+			}
+			.result{
+				text-align: right;
+				font-size: 0.14rem;
+				color: #999;
+				position: absolute;
+				right: 0.4rem;
+			}
+			.arrow{
+				width: 0.08rem;
+				height: 0.08rem;
+				border-right: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				transform: rotate(-45deg);
+				position: absolute;
+				right: 0.2rem;
+			}
+			&::after{
+				content: '';
+				width: 90%;
+				border-bottom: 1px solid #f6f6f6;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+	.btn-cont{
+		padding: 0.2rem;
+	}
+
+}

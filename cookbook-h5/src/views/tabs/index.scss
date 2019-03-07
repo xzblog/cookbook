@@ -1,0 +1,43 @@
+.tabs-page{
+	padding-top: 0.5rem;
+	.plan{
+		margin-top: 1px;
+		.list{
+			.item{
+				margin-bottom: 1px;
+				.pic{
+
+				}
+				.text{
+					background-color: #fff;
+					padding: 0 0.15rem 0.1rem;
+					.title{
+						line-height: 0.3rem;
+						font-size: 0.16rem;
+					}
+					.desc{
+						color: #666;
+						line-height: 0.24rem;
+					}
+				}
+
+			}
+		}
+	}
+
+}
+
+
+.am-tabs-tab-bar-wrap{
+	width: 50%;
+	top: 0;
+	left: 25%;
+	position: fixed;
+	z-index: 999;
+}
+.am-tabs-default-bar-tab{
+	height: 0.5rem;
+}
+html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{
+	background-color: #fff;
+}

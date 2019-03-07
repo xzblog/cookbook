@@ -1,0 +1,57 @@
+@import '../../static/css/theme';
+
+.yg-radio{
+    position: relative;
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 1px;
+    padding: 0 0.1rem;
+
+    input[type='radio']{
+        position: absolute;
+        width: calc(100% - 0.2rem);
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+    }
+    input[type='radio']:disabled + .icon{
+        border: 1px solid #ddd;
+    }
+
+    input[type='radio']:checked + .icon::after{
+        content: '';
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        width: 60%;
+        height: 60%;
+        transform: scale(1);
+        background-color: $primary;
+        border-radius: 100%;
+    }
+    .icon{
+        //width: 0.2rem;
+        //height: 0.2rem;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        display: inline-block;
+        border-radius: 100%;
+        border: 1px solid $primary;
+    }
+    .icon::after{
+        content: '';
+        transform: scale(.4);
+        transition: transform .3s;
+    }
+
+
+
+    label{
+        width: calc(100% - 0.3rem);
+    }
+}

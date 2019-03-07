@@ -1,0 +1,82 @@
+@import "normalize";
+@import "theme";
+@import "animation";
+
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	background:#f8f9fa;
+	font-size: 0.14rem;
+	//max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+.container{
+	padding: 0.5rem 0;
+}
+.flex{
+	padding: 0 0.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.link{
+	display: block;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	border-bottom: 1px solid #f6f6f6;
+	color: #333;
+	padding: 0 0.1rem;
+	font-size: 0.16rem;
+
+}
+.loading{
+	width: 100%;
+	height: 6.68rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.my-btn{
+    width: 3rem;
+    height: 0.4rem;
+	line-height: calc(0.4rem - 2px);
+	font-size: 0.15rem;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "animation.scss";

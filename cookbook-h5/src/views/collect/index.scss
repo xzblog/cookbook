@@ -1,0 +1,31 @@
+.collect{
+	padding-top: 0.5rem;
+	.cancel-collect-all {
+		color: #555;
+	}
+	.collect-list{
+		&-item{
+			margin-bottom: 0.1rem;
+			.pic{
+
+			}
+			.title{
+				height: 0.5rem;
+				line-height: 0.5rem;
+				padding: 0 .15rem;
+				color: #555;
+				font-size: 0.16rem;
+				position: relative;
+				.cancel-collect-btn{
+					width: 0.5rem;
+					height: 0.5rem;
+					position: absolute;
+					top: 0;
+					right: 0;
+					text-align: center;
+					color: #fe652f;
+				}
+			}
+		}
+	}
+}

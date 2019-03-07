@@ -1,0 +1,53 @@
+
+.yg-navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 0.5rem;
+	background: #fff;
+
+	&-left,
+	&-title,
+	&-right {
+		flex: auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	&-left {
+		min-width: 0.5rem;
+		justify-content: flex-start;
+		font-size: 0.14rem;
+		margin-left: 0.1rem;
+	}
+	&-left-icon {
+		display: inherit;
+		margin-right: 0.1rem;
+	}
+	&-title {
+		font-size: 0.18rem;
+		justify-content: center;
+		font-weight: normal;
+	}
+	&-right {
+		min-width: 0.5rem;
+		justify-content: flex-end;
+		font-size: 0.14rem;
+		margin-right: 0.1rem;
+	}
+	
+	&-dask {
+		background: #fff;
+	}
+	&-transparent {
+		background-color: rgba(247, 247, 247, 0)
+	}
+}
+
+.yg-fixed-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}

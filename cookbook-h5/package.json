@@ -1,0 +1,59 @@
+{
+    "name": "yogoo-cli",
+    "version": "1.0.0",
+    "description": "react 菜谱大全h5",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --config config/webpack.config.dev.js --color --hot",
+        "build": "webpack --config config/webpack.config.prod.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "webpack4",
+        "react"
+    ],
+    "author": "Miracle",
+    "license": "MIT",
+    "dependencies": {
+        "antd-mobile": "^2.1.11",
+        "axios": "^0.18.0",
+        "prop-types": "^15.6.1",
+        "react-loadable": "^5.3.1",
+        "svg-sprite-loader": "^4.1.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^8.3.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-import": "^1.7.0",
+        "babel-plugin-syntax-dynamic-import": "^6.18.0",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babel-runtime": "^6.26.0",
+        "classnames": "^2.2.5",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^0.28.11",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "file-loader": "^1.1.11",
+        "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.9.3",
+        "postcss-flexbugs-fixes": "^3.3.0",
+        "postcss-loader": "^2.1.3",
+        "pre-commit": "^1.2.2",
+        "react": "^16.3.1",
+        "react-dom": "^16.3.1",
+        "react-hot-loader": "^4.1.0",
+        "react-router-dom": "^4.2.2",
+        "sass-loader": "^6.0.7",
+        "style-loader": "^0.20.3",
+        "uglifyjs-webpack-plugin": "^1.2.5",
+        "url-loader": "^1.0.1",
+        "webpack": "^4.6.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.3",
+        "webpack-merge": "^4.1.2"
+    }
+}

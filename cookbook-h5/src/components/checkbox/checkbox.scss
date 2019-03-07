@@ -1,0 +1,71 @@
+@import '../../static/css/theme';
+
+.yg-checkbox{
+    position: relative;
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 1px;
+    padding: 0 0.1rem;
+
+    input[type='checkbox']{
+        position: absolute;
+        width: calc(100% - 0.2rem);
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+    }
+    input[type='checkbox']:disabled + .icon{
+        border: 1px solid #ddd;
+    }
+
+    input[type='checkbox']:checked + .icon::before,
+    input[type='checkbox']:checked + .icon::after{
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        background-color: $primary;
+        box-shadow: inset 0 0 0 1px $primary;
+
+    }
+    input[type='checkbox']:checked + .icon::before{
+        height: 1px;
+        width: 12px;
+        left: 20%;
+        top: 60%;
+
+    }
+    input[type='checkbox']:checked + .icon::after{
+        height: 6px;
+        left: 20%;
+        bottom: 40%;
+        width: 1px;
+    }
+
+    .icon{
+        // width: 0.2rem;
+        // height: 0.2rem;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        display: inline-block;
+        border-radius: 0.6rem;
+        box-sizing: border-box;
+        border: 1px solid $primary;
+        transform: rotate(-45deg);
+    }
+    .icon::after,
+    .icon::before{
+        content: '';
+        pointer-events: none;
+    }
+
+
+
+    label{
+        width: calc(100% - 0.3rem);
+    }
+}

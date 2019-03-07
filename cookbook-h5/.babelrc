@@ -1,0 +1,31 @@
+{
+	"presets":[
+		[
+			"env",
+			{
+				"modules":false
+			}
+		],
+		"stage-2",
+		"react"
+	],
+	"plugins": [
+		[
+			"transform-runtime",
+			{
+				"polyfill": false
+			}
+		],
+		[
+			"import",
+			{
+				"libraryName": "antd-mobile",
+				"style": "css"
+			}
+		],
+		"react-hot-loader/babel",
+		"syntax-dynamic-import",
+		"transform-decorators-legacy"
+	]
+
+}

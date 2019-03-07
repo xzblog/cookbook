@@ -1,0 +1,59 @@
+@import "../../static/css/theme";
+
+.yg-notice {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    padding: 0 0.15rem;
+    min-width: 1rem;
+    max-width: 60%;
+    background: rgba(0,0,0, .7);
+    border-radius: $radius;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.44rem;
+    color: #fff;
+    z-index: 110;
+    transition: all .3s;
+    transform: translate3D(-50%, -50%, 0);
+
+    //离开动画
+    &.leave {
+        transform: translate3D(-50%, -100%, 0);
+        opacity: 0;
+    }
+
+    // 正常提示
+    &.info {
+        animation: Flop .5s linear;
+    }
+
+    // 成功提示
+    &.success {
+        animation: BombIn .3s;
+    }
+
+    // 警告提示⚠️
+    &.warning {
+        animation: slideInFromBottom .3s;
+    }
+
+    // 错误提示
+    &.fail {
+        animation: shake .5s;
+    }
+
+
+    &-icon {
+        padding: 0.1rem;
+        font-size: 80px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &-content {
+        font-size: 0.14rem;
+        text-align: center;
+        color: #fff;
+    }
+}

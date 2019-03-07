@@ -1,0 +1,106 @@
+@import "../../static/css/theme";
+
+.cookbook{
+    background-color: #fff;
+	padding-bottom: 0.5rem;
+    &-top{
+        padding: 0.1rem 0.2rem;
+        .search{
+            background-color: #f3f2ee;
+            height: 0.38rem;
+            line-height: 0.38rem;
+            text-align: center;
+            color: #333;
+            font-size: 0.15rem;
+            border-radius: $radius;
+            &-icon{
+                vertical-align: text-bottom;
+            }
+        }
+
+        .hot-menu{
+            margin-top: 0.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .item{
+                width: 48%;
+                height: 1.1rem;
+                overflow: hidden;
+                border-radius: $radius;
+            }
+        }
+    }
+
+    .swiper-menu{
+        margin-top: 0.2rem;
+        height: 0.6rem;
+        width: 100%;
+
+        .slider-dots {
+            bottom: 0;
+        }
+    }
+
+    .menu{
+        margin-top: 0.2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .item{
+            width: 25%;
+            text-align: center;
+            border-top: 1px solid #f6f6f6;
+            border-right: 1px solid #f6f6f6;
+            color: #333;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            &:nth-child(4n){
+                border-right: none;
+            }
+        }
+    }
+    .perch{
+        width: 100%;
+        height: 0.1rem;
+        background-color: #f6f6f6;
+    }
+
+    .popular{
+        padding: 0.1rem 0.2rem 0;
+        h3{
+            font-size: 0.16rem;
+            color: #555;
+            font-weight: normal;
+            height: 0.4rem;
+            line-height: 0.4rem;
+        }
+        .popular-list{
+
+            .popular-item{
+                width: 100%;
+                height: 1.95rem;
+                margin-top: 0.15rem;
+                padding-bottom: 0.15rem;
+                border-bottom: 1px solid #f6f6f6;
+				&:first-child{
+					margin-top: 0.1rem;
+				}
+                img{
+					width: 100%;
+                    height: 1.8rem;
+                }
+            }
+        }
+    }
+	.end{
+		height: .5rem;
+		width: 100%;
+		background: #f6f6f6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #999;
+	}
+}
